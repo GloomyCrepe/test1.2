@@ -13,7 +13,7 @@ class Main extends Component{
     componentDidMount(){
         this.print();
         setInterval(()=>{
-                this.time(2018,12,31)
+                this.time(2016,4,23)
             },1000
         )
         var audio = document.getElementById("audio");
@@ -65,7 +65,7 @@ class Main extends Component{
         const date =()=>{
             if (this.state.date.d!==undefined){
                 const {d,hour,minute,second} = this.state.date
-                return (<p>我为你带上手链: <span className="date-text">{d}</span> 天 <span className="date-text">{hour}</span> 小时 <span className="date-text">{minute}</span> 分 <span className="date-text">{second}</span> 秒 </p>
+                return (<p>我们已经一起走过了: <span className="date-text">{d}</span> 天 <span className="date-text">{hour}</span> 小时 <span className="date-text">{minute}</span> 分 <span className="date-text">{second}</span> 秒 </p>
                 )
             }
         }
@@ -73,9 +73,9 @@ class Main extends Component{
             <div className="App animated bounceInLeft">
             <div className="date">{date()}</div>
             <div id="autotype">
-                <h1 style={{fontWeight:900}}>早上好！我的仙女老婆！</h1>
-                <p >在我向你表达思念之情之前，让音乐开始！可爱吧!</p>
-                <p>今天是我们一起过的第一个情人节，从2016年4月23日到现在，我们一起经历了许许多多的事情，
+                <h1 style={{fontWeight:900}}>哈喽！wuli趴布猪！</h1>
+                <p >在煽情开始之前，先放首歌当背景音乐吧！Music!</p>
+                <p>今天是我们两周年的纪念日，从2016年4月23日到现在，我们一起经历了许许多多的事情，
                     有欢笑也有争吵，也曾因为一些事情闹过分手，但是我们都走过来了。</p>
                 <p>高三那会，每天都期待着见到你，上课的时候视线会不自觉的到你身上；吃早餐帮你打好早餐，帮你洗早餐盒；
                     下课的时候假装凑到你身边看看你在干啥，有没有不会的题目，然后就可以教你做题，表面上是想展现
@@ -95,8 +95,8 @@ class Main extends Component{
                 </p>
                 <p>最后祝wuli趴布猪两周年纪念日快乐哦！</p>
                 <div style={{textAlign:'right'}}>
-                    <p>保质期七十年的♥钱师傅</p>
-                    <p>2019年2月3日</p>
+                    <p>爱你的♥魏锐</p>
+                    <p>2018年4月23日</p>
                 </div>
             </div>
                 <audio id="audio" src={url}></audio>
